@@ -1,0 +1,280 @@
+/*EXEMPLO ROOT*/
+/*:root {
+    --color-red: red;
+}
+
+body {
+    background-color: var(--color-red);
+}*/
+:root {
+    --cor-branco: #ffffff;
+    --cor-verde: #33cc33;
+    --cor-verde-2: #339933;
+    --cor-verde-3: #66cc66;
+    --cor-azul: #003399;
+    --cor-laranja: #ff6633;
+    --cor-vermelho: #cc3333;
+}
+
+body {
+    font-family: 'Muli', sans-serif !important;
+}
+
+/*
+>>>>> BOOTSTRAP <<<<<
+*/
+/*** menu de navegação ***/
+.text-primary {
+    color: var(--cor-verde) !important;
+}
+
+.bg-primary {
+    background: var(--cor-verde) !important;
+}
+
+.fa-bars {
+    color: var(--cor-branco) !important;
+    font-size: 30px;
+}
+.navbar-toggler{
+    outline:none !important; /*RETIRAR CLICK DO GOOGLE*/
+}
+
+.nav-link {
+    border-bottom: 2px solid var(--cor-verde);
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: var(--cor-laranja);
+    border-radius: 0px 15px 0px 15px;
+} 
+
+.nav-link:hover {
+    border-bottom: 3px solid var(--cor-branco);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.nav-link:active {
+    background-color: var(--cor-vermelho);
+  transform: translateY(3px);
+}
+
+.btn {
+    width: 100% !important;
+    background-color: var(--cor-verde-2) !important;
+    border: none !important;
+    transition: 0.5s;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: var(--cor-verde-3) !important;
+    transition: 0.5s;
+}
+/*** fim do menu ***/
+
+/*
+>>>>> CÓDIGO CSS EXTRA <<<<<
+*/
+/*** menu de navegação ***/
+.borda {
+    border: 1px solid red !important;
+}
+
+.nav-item a {
+    font-size: 18px !important;
+}
+
+.sub-logo {
+    font-size: 16px !important;
+}
+
+.logo img {
+    width: 55px !important;
+}
+
+.logo h1{
+    font-size: 20px;
+}
+
+.fa-braille {
+    font-size: 30px;
+    color: var(--cor-branco) !important;
+}
+/*** fim do menu de navegação ***/
+
+.banner {
+    min-height: calc(100vh);
+    background: url(../img/fundo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 8%;
+}
+
+.banner img {
+    width: 100%;
+}
+
+/*** Informativo agenda ***/
+@media screen and (min-width: 601px) { 
+    h2.texto-responsivo {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) { 
+    h2.texto-responsivo {
+        font-size: 25px;   
+    }
+}
+
+.p-orientacao {
+    font-size: 22px;
+    margin-top: 20px;
+    
+}
+
+.info-agenda img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 10px 10px var(--cor-verde-3);
+    transition: 0.5s;
+}
+
+.info-agenda img:hover {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 2px var(--cor-verde-3);
+    transition: 0.5s;
+}
+
+.p-info-agenda {
+    font-size: 20px;
+}
+
+.atencao {
+    background-color: var(--cor-laranja);
+    color: var(--cor-branco);
+    font-size: 17px;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+.fa-arrow-alt-circle-right {
+    font-size: 20px;
+    padding: 0;
+}
+
+.btn-info {
+    box-shadow: 0px 5px var(--cor-verde-3);
+}
+
+.btn-info:hover {
+    box-shadow:none;
+}
+/*** Fim do informativo ***/
+
+/*** Realizar Agenda ***/
+.realizar-agenda img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 10px 10px var(--cor-laranja);
+    transition: 0.5s;
+}
+
+.realizar-agenda img:hover {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 2px var(--cor-laranja);
+    transition: 0.5s;
+}
+
+.p-realizar-agenda {
+    font-size: 20px;
+}
+
+.atencao-2 {
+    background-color: var(--cor-vermelho);
+    color: var(--cor-branco);
+    font-size: 17px;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+.btn-agenda {
+    box-shadow: 0px 5px var(--cor-vermelho);
+    background-color: var(--cor-laranja) !important;
+    border: none !important;
+    transition: 0.5s;
+}
+
+.btn-agenda:hover {
+    box-shadow: none;
+    background-color: var(--cor-vermelho) !important;
+    transition: 0.5s;
+}
+
+.titulo-agenda {
+    color: var(--cor-laranja) !important;
+}
+
+.alerta {
+    background-color: var(--cor-vermelho);
+    color: var(--cor-branco);
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.logar-email {
+    background-color: var(--cor-laranja) !important;
+    border-radius: 8px !important;
+    padding: 5px !important;
+    color: var(--cor-branco) !important;
+}
+
+.logar-email:hover {
+    text-decoration: none;
+    box-shadow: 1px 1px 0px 0px var(--cor-branco) !important;
+} 
+
+/***/
+
+#subirTopo {
+    text-decoration: none;
+    background: var(--cor-laranja);
+    bottom: 30px;
+    right: 30px;
+    color: var(--cor-branco);
+    text-align: center;
+    cursor: pointer;
+    padding: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: fixed;
+    border: 0;
+    font-family: sans-serif;
+    opacity: .8;
+    border-radius: 50px;
+    transition: 0.5s;
+    }
+    
+    #subirTopo:hover {
+    opacity:1;
+    transition: 0.5s;
+    }
+
+    /*APAGAR*/
+    @media screen and (min-width: 601px) { 
+        span.texto-responsivo {
+            font-size: 60px;
+        }
+    }
+    
+    @media screen and (max-width: 600px) { 
+        span.texto-responsivo {
+            font-size: 30px;   
+        }
+    }
