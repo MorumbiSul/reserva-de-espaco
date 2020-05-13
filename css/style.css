@@ -90,7 +90,7 @@ body {
 }
 
 .logo img {
-    width: 55px !important;
+    width: 200px !important;
 }
 
 .logo h1{
@@ -266,7 +266,7 @@ body {
     transition: 0.5s;
     }
 
-    /*APAGAR*/
+    /*APAGAR QUANDO TIVER VÍDEO*/
     @media screen and (min-width: 601px) { 
         span.texto-responsivo {
             font-size: 60px;
