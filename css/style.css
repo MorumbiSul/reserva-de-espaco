@@ -61,14 +61,14 @@ body {
 
 .btn {
     width: 100% !important;
-    background-color: var(--cor-verde-2) !important;
+    background-color: var(--cor-laranja) !important;
     border: none !important;
     transition: 0.5s;
     font-size: 16px;
 }
 
 .btn:hover {
-    background-color: var(--cor-verde-3) !important;
+    box-shadow: 0px 5px var(--cor-branco);
     transition: 0.5s;
 }
 /*** fim do menu ***/
@@ -117,10 +117,26 @@ body {
     width: 100%;
 }
 
+@media (max-width: 500px) {
+    .banner .container {
+        margin-top: 100px !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .banner .container button span{
+        display: block;
+    }
+}
+
 /*** Informativo agenda ***/
 @media screen and (min-width: 601px) { 
     h2.texto-responsivo {
         font-size: 40px;
+    }
+
+    .banner .container {
+        margin-top: 100px !important;
     }
 }
 
@@ -168,7 +184,12 @@ body {
 }
 
 .btn-info {
+    width: 100% !important;
+    background-color: var(--cor-verde-2) !important;
     box-shadow: 0px 5px var(--cor-verde-3);
+    border: none !important;
+    transition: 0.5s;
+    font-size: 16px;
 }
 
 .btn-info:hover {
